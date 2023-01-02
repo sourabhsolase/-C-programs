@@ -1,0 +1,33 @@
+#include<stdio.h>
+void pattern(int irow,int icolumn)
+{
+  char ch='A';
+  char dh ='a';
+   int icnt=0,i=0;
+   for(icnt=1;icnt<=irow;icnt++, )
+   {
+    for(i=1;i<=icolumn;i++,)
+    {
+        if((i%2)==0)
+        {
+        printf("%c\t",i+ch);
+        }
+        else
+        {
+            printf("%c\t",i+dh);
+        }    
+    }
+         printf("\n");
+   }
+
+}
+int main()
+{
+int ivalue1=0,ivalue2=0;
+printf("enter row and column:\n ");
+scanf("%d%d",&ivalue1,&ivalue2);
+
+pattern(ivalue1,ivalue2);
+    return 0;
+
+}
